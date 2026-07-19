@@ -1,0 +1,147 @@
+2.1
+Given: x = 2 and y = 3
+
+a) Displays: x = 2
+
+b) Displays: Value of 2 + 2 is 4
+
+c) Displays: x =
+
+d) Displays: 5 = 5
+
+
+2.2
+The input() function captures user input as a string (text). To use it as a number later, it must be converted using int():
+rating = int(input('Enter an integer rating between 1 and 10: '))
+
+
+2.3
+print(f'Congratulations! Your grade of {grade} earns you an A in this
+course')
+
+OR
+
+print('Congratulations! Your grade of', grade, 'earns you an A in this
+course')
+
+
+2.4
+Addition
+27.5 + 2 = 29.5
+
+Subtraction
+27.5 - 2 = 25.5
+
+Multiplication
+27.5 * 2 = 55.0
+
+Division
+27.5 / 2 = 13.75
+
+Floor division
+27.5 // 2 = 13.0
+
+Exponentiation (power)
+ 27.5 ** 2 = 756.25
+
+
+2.5
+r = 2
+pi = 3.14159
+print('Diameter:', 2 * r)
+print('Circumference:', 2 * pi * r)
+print('Area:', pi * (r ** 2))
+Diameter: 4
+Circumference: 12.56636
+Area: 12.56636
+
+
+2.6
+if(integer % 2 = 0):
+	print(f"{integer} is an even number")
+if(integer % 2 != 0)::
+	print(f"{integer} is not an even number:)
+
+
+2.7
+if(1024 % 2 = 0):
+	print("1024 is a multiple of 4")
+if(10 % 2):
+	print(""10 is a multiple of 2")
+
+
+2.10
+num1 = int(input('First integer: '))
+num2 = int(input('Second integer: '))
+num3 = int(input('Third integer: '))
+
+total = num1 + num2 + num3
+avg = total / 3
+prod = num1 * num2 * num3
+smallest = min(num1, num2, num3)
+largest = max(num1, num2, num3)
+
+print(f'Sum: {total}\nAverage: {avg}\nProduct: {prod}\nSmallest: {smallest}\nLargest: {largest}')
+
+
+2.11
+num = int(input("Enter a five-digit integer: "))
+
+d5 = num % 10
+num = num // 10
+
+d4 = num % 10
+num = num // 10
+
+d3 = num % 10
+num = num // 10
+
+d2 = num % 10
+num = num // 10
+
+d1 = num % 10
+
+print(d1, d2, d3, d4, d5, sep='   ')
+
+
+2.12
+p = 1000
+r = 0.07
+
+n= 10
+ten_years = p * (1 + r)**10y
+
+n= 20
+twenty_years = p * (1 + r)**20
+
+n= 30
+thirty_years = p * (1 + r)**30
+
+
+print(f"10 Years: ${ten_years}")
+print(f"20 Years: ${twenty_years}")
+print(f"30 Years: ${thirty_years}")
+
+
+2.13
+large_num = 999999 ** 99999
+print(large_num)
+
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+
+
+2.14
+age = int(input('Enter your age: '))
+
+max_hr = 220 - age
+target_low = max_hr * 0.50
+target_high = max_hr * 0.85
+
+print(f"Maximum Heart Rate: {max_hr} bpm")
+print(f"Target Heart Rate Range: {target_low} - {target_high} bpm")
+
+
+
+
+
+
