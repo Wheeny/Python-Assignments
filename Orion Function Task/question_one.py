@@ -3,14 +3,15 @@ def temperature_converter(temperature, measurement):
         calc = (temperature - 32) * 5/9 # to celcius
         if calc > 28:
             return "Heat alert"
+        return "Cold advisory"
     else:
         calc = (temperature - 9/5) + 32 # to fahrenheit
         if calc < 82:
             return "Cold advisory"
+        return "Heat alert"
             
    
 temperature = float(input("Enter temperature(value): "))
 temperature_unit = input("Enter unit of measurement: C or F: ")
-
 
 print(temperature_converter(temperature, temperature_unit))
