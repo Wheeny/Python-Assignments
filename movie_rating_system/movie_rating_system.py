@@ -39,30 +39,30 @@ def view_average_ratings():
     return output.strip()
 
 
-if __name__ == "__main__":
-    while True:
-        print("\n1. Add a Movie")
-        print("2. Rate a Movie")
-        print("3. View Average Ratings")
-        print("4. Exit")
+
+while True:
+    print("\n1. Add a Movie")
+    print("2. Rate a Movie")
+    print("3. View Average Ratings")
+    print("4. Exit")
+    
+    choice = input("Enter your choice: ")
+    
+    if choice == "1":
+        name = input("Enter the movie name: ")
+        print(add_movie(name))
         
-        choice = input("Enter your choice: ")
+    elif choice == "2":
+        name = input("Enter the movie name: ")
+        score = float(input("Enter your rating (1-5): "))
+        print(rate_movie(name, score))
         
-        if choice == "1":
-            name = input("Enter the movie name: ")
-            print(add_movie(name))
-            
-        elif choice == "2":
-            name = input("Enter the movie name: ")
-            score = float(input("Enter your rating (1-5): "))
-            print(rate_movie(name, score))
-            
-        elif choice == "3":
-            print(view_average_ratings())
-            
-        elif choice == "4":
-            print("Exiting the application. Goodbye!")
-            break
-            
-        else:
-            print("Invalid choice, try again.")
+    elif choice == "3":
+        print(view_average_ratings())
+        
+    elif choice == "4":
+        print("Exiting the application. Goodbye!")
+        break
+        
+    else:
+        print("Invalid choice, try again.")
